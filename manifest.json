@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Workday and Outlook Sync",
+    "description": "Creates events on Outlook calendar when you add them to Workday",
+    "version": "1.1",    
+    "content_scripts": [
+        {
+            "run_at": "document_end",
+            "matches": ["https://www.myworkday.com/ucf/*"],
+            "js": ["assets/js/jquery.js", "assets/js/main.js"]
+        }
+    ],
+    "permissions": [
+        "activeTab",
+        "contextMenus",
+        "tabs"
+    ]
+}
