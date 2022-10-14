@@ -58,7 +58,7 @@ function activateOutlookFields() {
             $(absenceFormFooter).append(myWidget);
 
             // The new submit button
-            document.getElementById($(selectors.submitButton).attr("id")).addEventListener("mouseover", function(){
+            document.getElementById($(selectors.submitButton).attr("id")).addEventListener("click", function(){
 
                 sendEventToOutlook(myWidget);
             });
