@@ -9,10 +9,5 @@
             "matches": ["https://www.myworkday.com/*"],
             "js": ["assets/js/jquery.js", "assets/js/main.js"]
         }
-    ],
-    "permissions": [
-        "activeTab",
-        "contextMenus",
-        "tabs"
     ]
 }
