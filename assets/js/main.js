@@ -16,7 +16,7 @@ var selectors = {
     absenceFormFooter: "footer div.WJKI",
     startDate: "[headers^=columnheader1] .gwt-Label",
     endDate: "[headers^=columnheader2] .gwt-Label",
-    leaveType: "[headers^=columnheader3] .gwt-Label",
+    leaveType: "[headers^=columnheader3] ul li p",
 }
 
 function enhanceRequestAbesence(){
@@ -79,8 +79,8 @@ function sendEventToOutlook(myWidget) {
     var startDate = $(selectors.startDate)[0].innerText;
     var endDate = $(selectors.endDate)[0].innerText;
 
-   // var summary = $(selectors.leaveType)[0].innerText;
-   var summary = "Hello World";
+   var summary = $(selectors.leaveType)[0].innerText;
+   //var summary = "Hello World";
 
     console.log("Sending to outlook: " + startDate + " " + startTime + " - " + endDate + " " + endTime);
     console.log("STart datetime: " + createIcalDate(startDate, startTime));
