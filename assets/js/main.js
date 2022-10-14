@@ -54,7 +54,7 @@ function activateOutlookFields() {
 
             console.log(absenceFormFooter);
             console.log("Appending the checkbox");
-            var myWidget = $("<ul><li><label>To Outlook Calendar</label><input id='submitToOutlook' type='checkbox' /></li><li><label>Start Time:<input id='startTime' type='time' /></label></li><li><label>End Time:<input id='endTime' type='time' /></label></li></ul>");
+            var myWidget = $("<br /><div class='WILI'><h3 class='WIVK WGVK'>Outlook Calendar Information</h3><ul><li><label>Start Time:<input id='startTime' type='time' /></label></li><li><label>End Time:<input id='endTime' type='time' /></label></li></ul></div>");
             $(absenceFormFooter).append(myWidget);
 
             // The new submit button
